@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+</head>
+<body bgcolor=pink>
+<body>
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='1234' && document.form.login.value=='equipo4'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contrasena correctos."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="MENU.HTML">
+
+<P><h1>Usuario:</h1>    <INPUT type=text name=login> 
+<P><h1>Contrasena:</h1> <INPUT type=password name=password> 
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM> 
+</body>
+</html>
